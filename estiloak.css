@@ -1,0 +1,225 @@
+/* Fuente moderna */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+  margin: 0;
+}
+
+/* Variables modo claro */
+:root {
+  --bg: #f9f9f9;
+  --text: #222;
+  --card-bg: #fff;
+  --primary: #0077ff;
+  --nav-bg: #fff;
+}
+
+/* Variables modo oscuro */
+.dark {
+  --bg: #121212;
+  --text: #eee;
+  --card-bg: #1e1e1e;
+  --primary: #4ea1ff;
+  --nav-bg: #1c1c1c;
+}
+
+/* NAV */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--nav-bg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: var(--primary);
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: var(--primary);
+}
+
+/* Botón Dark Mode */
+.dark-btn {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: var(--text);
+  transition: transform 0.3s;
+}
+
+.dark-btn:hover {
+  transform: rotate(20deg);
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem 2rem;
+  text-align: left;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: contain; /* Cambiado de cover a contain */
+  border: 3px solid var(--primary);
+  background: #F5E5CD; /* opcional, si quieres borde interno */
+  padding: 5px; /* opcional, para crear margen dentro del círculo */
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  margin-bottom: .5rem;
+}
+
+.hero p {
+  color: var(--text);
+  font-size: 1.1rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: .7rem 1.4rem;
+  background: var(--primary);
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #005fcc;
+}
+
+/* SECCIONES */
+.section {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.section h2 {
+  font-size: 1.8rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--primary);
+  display: inline-block;
+  padding-bottom: .3rem;
+}
+
+p, li {
+  color: var(--text);
+}
+
+/* CARDS */
+.card {
+  background: var(--card-bg);
+  padding: 1.2rem;
+  margin: 1rem 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* LISTAS */
+.lista {
+  list-style: none;
+  padding: 0;
+}
+
+.lista li::before {
+  content: "✔ ";
+  color: var(--primary);
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: var(--nav-bg);
+  color: var(--text);
+  margin-top: 2rem;
+}
+/* Botón enlace en formación */
+.btn-link {
+  display: inline-block;
+  margin-top: .5rem;
+  padding: .5rem 1rem;
+  border: 1px solid var(--primary);
+  border-radius: 6px;
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.btn-link:hover {
+  background: var(--primary);
+  color: #fff;
+}
+.idiomas-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.idioma-card {
+  background: var(--card-bg);
+  padding: 1rem 1.2rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  flex: 1 1 200px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.idioma-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.idioma-card h3 {
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.idioma-card p {
+  margin-bottom: 0.7rem;
+}
+
