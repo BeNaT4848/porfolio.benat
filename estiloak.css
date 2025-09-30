@@ -269,3 +269,120 @@ p, li {
   transition: width 0.5s ease;
 }
 
+/* Contenedor proyecto */
+.proyecto-card {
+  display: flex;
+  flex-direction: row; /* Texto izquierda, imagen derecha */
+  align-items: center;
+  gap: 2rem;
+  background: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin: 1.5rem 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.proyecto-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* Texto izquierda */
+.proyecto-text {
+  flex: 2;
+  color: var(--text);
+}
+
+.proyecto-text h3 {
+  font-size: 1.5rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.proyecto-text p {
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+}
+
+/* Imagen derecha */
+.proyecto-img-container {
+  flex: 1;
+  text-align: right;
+}
+
+.proyecto-img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 1px solid #ddd;
+}
+
+/* Tags */
+.proyecto-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.tag {
+  background: var(--nav-bg);
+  color: var(--primary);
+  padding: 5px 12px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid var(--primary);
+}
+
+/* Botones */
+.proyecto-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.proyecto-buttons .btn-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--primary);
+  background: transparent;
+  color: var(--primary);
+  transition: all 0.3s;
+}
+
+.proyecto-buttons .btn-link:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+.proyecto-buttons .preview {
+  border-color: #555;
+  color: var(--text);
+}
+
+.proyecto-buttons .preview:hover {
+  background: #555;
+  color: #fff;
+}
+
+/* Responsive: móvil → columna */
+@media (max-width: 768px) {
+  .proyecto-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .proyecto-img-container {
+    text-align: center;
+  }
+}
+
+
+
