@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="fa-code.png" type="image/png">
+  <link rel="icon" href="./img/fa-code.png" type="image/png">
   <title>Porfolio - Beñat Gandiaga Valenciano</title>
   <link rel="stylesheet" href="estiloak.css">
   <script defer src="script.js"></script>
@@ -15,10 +15,9 @@
   <nav class="nav">
     <div class="logo">Beñat GV</div>
     <ul class="menu">
-      <li><a href="#sobre">Sobre mí</a></li>  
+      <li><a href="#sobre">Sobre mí</a></li>
       <li><a href="#formacion">Formación</a></li>
       <li><a href="#experiencia">Experiencia</a></li>
-      <li><a href="#proyectos">Proyectos</a></li>
       <li><a href="#competencias">Competencias</a></li>
       <li><a href="#idiomas">Idiomas</a></li>
       <li><a href="#contacto">Contacto</a></li>
@@ -31,7 +30,7 @@
 
   <!-- Hero -->
   <header class="hero">
-    <img src="avatar.png" alt="avatar" class="avatar">
+    <img src="./img/avatar.png" alt="avatar" class="avatar">
     <div>
       <h1>Beñat Gandiaga Valenciano</h1>
       <p>Estudiante de Desarrollo de Aplicaciones Multiplataforma</p>
@@ -43,7 +42,7 @@
 <section id="sobre" class="section">
     <h2>Sobre mí</h2>
     <p>
-        Hola, soy Beñat Gandiaga tengo 19 años y soy de Basauri.
+        Hola, soy Beñat Gandiaga tengo 20 años y soy de Basauri.
     </p>
     <p>
       Soy una persona proactiva y comprometida, con una actitud orientada al trabajo en equipo y la colaboración. 
@@ -57,9 +56,18 @@
   <!-- Formación -->
   <section id="formacion" class="section">
     <h2>Formación</h2>
+
+    <div class="card">
+      <h3>Bachillerato Tecnológico</h3>
+      <p>Finalizado · 2024</p>
+      <a href="documentos/bachillerato.pdf" target="_blank" class="btn-link doc-link">
+        Ver título
+      </a>
+    </div>
+
     <div class="card">
       <h3>Técnico Superior en Desarrollo de Aplicaciones Multiplataforma</h3>
-      <p>CIFP Txurdinaga · 2024 (En curso)</p>
+      <p>CIFP Txurdinaga · 2026 (En curso)</p>
       <p>Diseño y desarrollo web con metodología ETAZI y SCRUM basada en retos.</p>
     </div>
 
@@ -89,51 +97,16 @@
         <li>Refuerzo de valores de empatía y paciencia.</li>
       </ul>
     </div>
+    <div class="card">
+      <h3>Practicas de Desarrollador de aplicaciones Web</h3>
+      <p>105 horas · En Txurdinaga FP</p>
+      <ul>
+        <a href="documentos/105horas.png" target="_blank" class="btn-link">Ver Documento</a>
+      </ul>
+    </div>
   </section>
-<section id="proyectos" class="section">
-  <h2>🚀 Proyectos</h2>
 
-  <div class="proyecto-card">
-    <!-- Imagen -->
-    <div class="proyecto-img-container">
-      <img src="BecoMarket.png" alt="Proyecto BecoMarket" class="proyecto-img">
-    </div>
-
-    <!-- Texto -->
-    <div class="proyecto-text">
-      <h3>BecoMarket - Gestión de Comercio</h3>
-
-      <!-- Tags -->
-      <div class="proyecto-tags">
-        <span class="tag">Java</span>
-        <span class="tag">MySQL</span>
-        <span class="tag">XAMPP</span>
-      </div>
-
-      <p>
-        Beco Market es un proyecto personal desarrollado en <strong>Java</strong>, con base de datos gestionada en 
-        <strong>XAMPP (MySQL)</strong>.  
-        Esta aplicación permite organizar y gestionar pedidos, usuarios y productos de manera eficiente. 
-        Incluye funcionalidades como registro de usuarios, seguimiento de pedidos y administración de inventario.
-      </p>
-
-      <p>
-        El objetivo del proyecto es facilitar el control de las operaciones de un comercio, optimizando procesos 
-        y mejorando la experiencia de administración mediante una interfaz intuitiva.
-      </p>
-
-      <!-- Botones -->
-      <div class="proyecto-buttons">
-        <a href="https://github.com/BeNaT4848/BecoMarket" target="_blank" class="btn-link">
-          <i class="fas fa-code"></i> Código
-        </a>
-        
-      </div>
-    </div>
-  </div>
-</section>
-
-
+  <!-- Competencias -->
   <section id="competencias" class="section">
   <h2>Competencias</h2>
   <div class="competencias-container">
@@ -175,6 +148,7 @@
   </div>
 </section>
 
+
   <!-- Idiomas -->
  <section id="idiomas" class="section">
   <h2>Idiomas</h2>
@@ -185,8 +159,8 @@
     </div>
     <div class="idioma-card">
       <h3>Euskera</h3>
-      <p>B2</p>
-      <a href="euskeraB2.pdf" target="_blank" class="btn-link doc-link">Ver título</a>
+      <p>B2 - Nativo</p>
+      <a href="documentos/euskeraB2.pdf" target="_blank" class="btn-link doc-link">Ver título</a>
     </div>
     <div class="idioma-card">
       <h3>Inglés</h3>
@@ -209,3 +183,6 @@
   </footer>
 </body>
 </html>
+
+</html>
+
