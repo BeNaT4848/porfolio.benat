@@ -222,7 +222,6 @@ p, li {
 .idioma-card p {
   margin-bottom: 0.7rem;
 }
-
 .competencias-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -268,7 +267,6 @@ p, li {
   border-radius: 5px;
   transition: width 0.5s ease;
 }
-
 /* Contenedor proyecto */
 .proyecto-card {
   display: flex;
@@ -383,6 +381,5 @@ p, li {
     text-align: center;
   }
 }
-
 
 
